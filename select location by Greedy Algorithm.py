@@ -36,4 +36,5 @@ while sum(demand.values()) < sum(h):
     demand = {i: demand[i] + min(h[i], c[i,j]) for i in range(n)}
     cost += city_costs[j][1]
 
+
 print(f"Selected cities: {[cities[i] for i in solution]}")
