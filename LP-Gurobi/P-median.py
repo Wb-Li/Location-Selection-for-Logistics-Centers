@@ -34,6 +34,7 @@ c = {(i,j):((loc_x[i] - loc_x[j])**2 + (loc_y[i] - loc_y[j])**2)**.5
 # ----- model ------
 m = gp.Model('pmedian')
 
+
 # decision variable
 y = m.addVars(I, J, vtype=gp.GRB.BINARY, name='y')
 x = m.addVars(I, vtype=gp.GRB.BINARY, name='x')
